@@ -6,7 +6,7 @@ import ssl
 from params import *
     
 ws = websocket.WebSocket(sslopt={"cert_reqs": ssl.CERT_NONE})
-ws.connect("wss://websockets.financialmodelingprep.com")
+ws.connect("wss://crypto.financialmodelingprep.com")
 
 login = {
     'event':'login',
@@ -18,8 +18,8 @@ login = {
 subscribe = {
     'event':'subscribe',
     'data': {
-        'ticker': ["aapl", "msft"] ,
-    }
+        'ticker': ["btcusd"] ,
+        }
 }
 
 unsubscribe = {
